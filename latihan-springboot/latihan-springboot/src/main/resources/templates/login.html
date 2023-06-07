@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, intial-sacel=1.0, maximum-scale=1.0, user-scaleble=no" />
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-t`ouch-fullscrean" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta content="" name="description"/>
+  <meta content="" name="author"/>
+</head>
+<body>
+<div>
+  <p>SELAMAT DATANG DI HALAMAN LOGIN</p>
+  <form role="form" th:action="@{/Login}" th:object="${LoginInput}" method="POST">
+    <input type="text" placeholder="username" th:field="*{username}" required>
+    <input type="password" placeholder="password" th:field="*{password}" required>
+    <button arta-label="" type="submit" >Masuk</button>
+  </form>
+</div>
+</body>
+</html>
+
